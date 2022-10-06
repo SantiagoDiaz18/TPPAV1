@@ -23,10 +23,10 @@ namespace TPPav1.Datos
             //cadenaConexion = @"Data Source=LAPTOP-6VBJVRSO\SQLEXPRESS;Initial Catalog=BDPavTP;Integrated Security=True";
             
             //Clases
-           cadenaConexion = @"Data Source=maquis;Initial Catalog=BDPav1TP;User ID=avisuales1;Password=Pav1#2020Maquis";
+           //cadenaConexion = @"Data Source=maquis;Initial Catalog=BDPav1TP;User ID=avisuales1;Password=Pav1#2020Maquis";
             
             //Ronald
-            //cadenaConexion = @"Data Source=DESKTOP-1G6OTJV\SQLEXPRESS;Initial Catalog=BDPav1TP;Integrated Security=True";
+            cadenaConexion = @"Data Source=DESKTOP-1G6OTJV\SQLEXPRESS;Initial Catalog=BDPav1TP;Integrated Security=True";
 
             //Santiago
             //cadenaConexion = @"Data Source=DESKTOP-2GI3TRM\SQLEXPRESS;Initial Catalog=BDPav1TP;Integrated Security=True";

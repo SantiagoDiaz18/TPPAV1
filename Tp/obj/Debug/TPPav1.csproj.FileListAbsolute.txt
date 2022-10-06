@@ -107,3 +107,23 @@ D:\TP\TP\TPPAV1\obj\Debug\TPPav1.csproj.CoreCompileInputs.cache
 D:\TP\TP\TPPAV1\obj\Debug\TPPav1.exe
 D:\TP\TP\TPPAV1\obj\Debug\TPPav1.pdb
 D:\TP\TP\TPPAV1\obj\Debug\TPPav1.Presentacion.frmABMCLocalidades.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\bin\Debug\TPPav1.exe.config
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\bin\Debug\TPPav1.exe
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\bin\Debug\TPPav1.pdb
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.csproj.AssemblyReference.cache
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Presentacion.frmABMCBarrios.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Presentacion.frmABMCClientes.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Presentacion.frmABMCCompras.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Presentacion.frmABMCLocalidades.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Presentacion.frmABMCProductos.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Presentacion.frmABMCProveedores.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Presentacion.frmABMCUsuarios.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.frmLogin.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Presentacion.frmPrincipal.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Presentacion.frmABMCTipoProductos.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.Properties.Resources.resources
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.csproj.GenerateResource.cache
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.csproj.CoreCompileInputs.cache
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.exe
+C:\Users\Ronald\Desktop\Primer Practico\Tp\TPPAV1\Tp\obj\Debug\TPPav1.pdb
