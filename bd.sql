@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [BDPav1TP]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Database [BDPav1TP]    Script Date: 18/10/2022 23:38:58 ******/
 CREATE DATABASE [BDPav1TP]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -80,7 +80,7 @@ ALTER DATABASE [BDPav1TP] SET QUERY_STORE = OFF
 GO
 USE [BDPav1TP]
 GO
-/****** Object:  Table [dbo].[Barrios]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[Barrios]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -96,7 +96,7 @@ CREATE TABLE [dbo].[Barrios](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Clientes]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[Clientes]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -117,7 +117,7 @@ CREATE TABLE [dbo].[Clientes](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[DetalleFactura]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[DetalleFactura]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -136,7 +136,7 @@ CREATE TABLE [dbo].[DetalleFactura](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Facturas]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[Facturas]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -156,7 +156,7 @@ CREATE TABLE [dbo].[Facturas](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[FormasPago]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[FormasPago]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -170,7 +170,7 @@ CREATE TABLE [dbo].[FormasPago](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Localidades]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[Localidades]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -186,7 +186,7 @@ CREATE TABLE [dbo].[Localidades](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductoColor]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[ProductoColor]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -200,7 +200,7 @@ CREATE TABLE [dbo].[ProductoColor](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductoMaterial]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[ProductoMaterial]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -214,7 +214,7 @@ CREATE TABLE [dbo].[ProductoMaterial](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Productos]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[Productos]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -239,7 +239,7 @@ CREATE TABLE [dbo].[Productos](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Proveedores]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[Proveedores]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -257,7 +257,7 @@ CREATE TABLE [dbo].[Proveedores](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TipoDocumento]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[TipoDocumento]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -271,7 +271,7 @@ CREATE TABLE [dbo].[TipoDocumento](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TipoFactura]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[TipoFactura]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -285,7 +285,7 @@ CREATE TABLE [dbo].[TipoFactura](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TipoProductos]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[TipoProductos]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -299,7 +299,7 @@ CREATE TABLE [dbo].[TipoProductos](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TipoSexo]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[TipoSexo]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -313,7 +313,7 @@ CREATE TABLE [dbo].[TipoSexo](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Usuarios]    Script Date: 12/10/2022 09:54:12 ******/
+/****** Object:  Table [dbo].[Usuarios]    Script Date: 18/10/2022 23:38:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -342,6 +342,8 @@ INSERT [dbo].[Barrios] ([idBarrio], [nombreBarrio], [idLocalidad], [borrado]) VA
 GO
 SET IDENTITY_INSERT [dbo].[Barrios] OFF
 GO
+INSERT [dbo].[Clientes] ([nroDoc], [tipoDoc], [apellido], [nombre], [fechaNacimiento], [idSexo], [idBarrio], [telefono]) VALUES (2524257, 3, N'Perez', N'Jacinto', CAST(N'1959-08-15' AS Date), 2, 2, 46654)
+GO
 INSERT [dbo].[Clientes] ([nroDoc], [tipoDoc], [apellido], [nombre], [fechaNacimiento], [idSexo], [idBarrio], [telefono]) VALUES (12345678, 1, N'Baudino', N'Martin', CAST(N'2003-11-13' AS Date), 2, 1, 35176)
 GO
 INSERT [dbo].[Clientes] ([nroDoc], [tipoDoc], [apellido], [nombre], [fechaNacimiento], [idSexo], [idBarrio], [telefono]) VALUES (42356437, 2, N'Diaz', N'Santiago', CAST(N'2000-07-18' AS Date), 2, 2, 35136)
@@ -359,6 +361,10 @@ GO
 INSERT [dbo].[DetalleFactura] ([tipoFactura], [nroFactura], [idProducto], [precioUnitario], [cantidad]) VALUES (1, 10, 15, 1000, 2)
 GO
 INSERT [dbo].[DetalleFactura] ([tipoFactura], [nroFactura], [idProducto], [precioUnitario], [cantidad]) VALUES (1, 10, 16, 5555, 3)
+GO
+INSERT [dbo].[DetalleFactura] ([tipoFactura], [nroFactura], [idProducto], [precioUnitario], [cantidad]) VALUES (1, 12, 15, 1000, 4)
+GO
+INSERT [dbo].[DetalleFactura] ([tipoFactura], [nroFactura], [idProducto], [precioUnitario], [cantidad]) VALUES (1, 12, 17, 700, 1)
 GO
 INSERT [dbo].[DetalleFactura] ([tipoFactura], [nroFactura], [idProducto], [precioUnitario], [cantidad]) VALUES (2, 4, 17, 700, 2)
 GO
@@ -389,6 +395,8 @@ GO
 INSERT [dbo].[Facturas] ([tipoFactura], [nroFactura], [fechaEmision], [idFormaPago], [total], [tipoDocCl], [nroDocCl]) VALUES (1, 9, CAST(N'2022-10-12' AS Date), 3, 3800, 2, 43273537)
 GO
 INSERT [dbo].[Facturas] ([tipoFactura], [nroFactura], [fechaEmision], [idFormaPago], [total], [tipoDocCl], [nroDocCl]) VALUES (1, 10, CAST(N'2022-10-12' AS Date), 2, 18665, 2, 43273537)
+GO
+INSERT [dbo].[Facturas] ([tipoFactura], [nroFactura], [fechaEmision], [idFormaPago], [total], [tipoDocCl], [nroDocCl]) VALUES (1, 12, CAST(N'2022-10-18' AS Date), 3, 4700, 1, 12345678)
 GO
 INSERT [dbo].[Facturas] ([tipoFactura], [nroFactura], [fechaEmision], [idFormaPago], [total], [tipoDocCl], [nroDocCl]) VALUES (2, 4, CAST(N'2022-10-12' AS Date), 2, 1400, 2, 45482076)
 GO
