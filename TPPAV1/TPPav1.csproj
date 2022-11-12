@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85FA4C93-DBB1-4930-AE13-B38E64EF8838}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TPPav1</RootNamespace>
+    <AssemblyName>TPPav1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDPav1TPDataSet1.cs">
+      <DependentUpon>BDPav1TPDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BDPav1TPDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDPav1TPDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\BDHelper.cs" />
+    <Compile Include="Datos\Daos\BarrioDao.cs" />
+    <Compile Include="Datos\Daos\ClienteDao.cs" />
+    <Compile Include="Datos\Daos\FacturaDao.cs" />
+    <Compile Include="Datos\Daos\FormaPagoDao.cs" />
+    <Compile Include="Datos\Daos\LocalidadDao.cs" />
+    <Compile Include="Datos\Daos\PColorDao.cs" />
+    <Compile Include="Datos\Daos\PMaterialDao.cs" />
+    <Compile Include="Datos\Daos\ProductoDao.cs" />
+    <Compile Include="Datos\Daos\ProveedorDao.cs" />
+    <Compile Include="Datos\Daos\SexoDao.cs" />
+    <Compile Include="Datos\Daos\TipoDDao.cs" />
+    <Compile Include="Datos\Daos\TipoFDao.cs" />
+    <Compile Include="Datos\Daos\TipoPDao.cs" />
+    <Compile Include="Datos\Daos\UsuarioDao.cs" />
+    <Compile Include="Datos\Interfaces\IBarrio.cs" />
+    <Compile Include="Datos\Interfaces\ICliente.cs" />
+    <Compile Include="Datos\Interfaces\IFactura.cs" />
+    <Compile Include="Datos\Interfaces\IFormaPago.cs" />
+    <Compile Include="Datos\Interfaces\ILocalidad.cs" />
+    <Compile Include="Datos\Interfaces\IPColor.cs" />
+    <Compile Include="Datos\Interfaces\IPMaterial.cs" />
+    <Compile Include="Datos\Interfaces\IProducto.cs" />
+    <Compile Include="Datos\Interfaces\IProveedor.cs" />
+    <Compile Include="Datos\Interfaces\ISexo.cs" />
+    <Compile Include="Datos\Interfaces\ITipoD.cs" />
+    <Compile Include="Datos\Interfaces\ITipoF.cs" />
+    <Compile Include="Datos\Interfaces\ITipoP.cs" />
+    <Compile Include="Datos\Interfaces\IUsuario.cs" />
+    <Compile Include="Entidades\Barrio.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\DetalleFactura.cs" />
+    <Compile Include="Entidades\Factura.cs" />
+    <Compile Include="Entidades\FormaPago.cs" />
+    <Compile Include="Entidades\Localidad.cs" />
+    <Compile Include="Entidades\Producto.cs" />
+    <Compile Include="Entidades\ProductoColor.cs" />
+    <Compile Include="Entidades\ProductoMaterial.cs" />
+    <Compile Include="Entidades\Proveedor.cs" />
+    <Compile Include="Entidades\TipoDocumento.cs" />
+    <Compile Include="Entidades\TipoFactura.cs" />
+    <Compile Include="Entidades\TipoProducto.cs" />
+    <Compile Include="Entidades\TipoSexo.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Presentacion\frmABMCBarrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCBarrios.designer.cs">
+      <DependentUpon>frmABMCBarrios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCClientes.Designer.cs">
+      <DependentUpon>frmABMCClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCCompras.Designer.cs">
+      <DependentUpon>frmABMCCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCLocalidades.Designer.cs">
+      <DependentUpon>frmABMCLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCProductos.Designer.cs">
+      <DependentUpon>frmABMCProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCProveedores.Designer.cs">
+      <DependentUpon>frmABMCProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCUsuarios.Designer.cs">
+      <DependentUpon>frmABMCUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmAltaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmAltaFactura.Designer.cs">
+      <DependentUpon>frmAltaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCTipoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmABMCTipoProductos.Designer.cs">
+      <DependentUpon>frmABMCTipoProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteProductos.Designer.cs">
+      <DependentUpon>frmReporteProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteProductosVendidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteProductosVendidos.Designer.cs">
+      <DependentUpon>frmReporteProductosVendidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteProveedoresPorBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteProveedoresPorBarrio.Designer.cs">
+      <DependentUpon>frmReporteProveedoresPorBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteClienteConMasCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteClienteConMasCompras.Designer.cs">
+      <DependentUpon>frmReporteClienteConMasCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\dsClientesConMasCompras.cs">
+      <DependentUpon>dsClientesConMasCompras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dsClientesConMasCompras.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsClientesConMasCompras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dsProductos.cs">
+      <DependentUpon>dsProductos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dsProductos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProductos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dsProductosVendidos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProductosVendidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dsProveedoresPorBarrio.cs">
+      <DependentUpon>dsProveedoresPorBarrio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dsProveedoresPorBarrio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProveedoresPorBarrio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Implementaciones\BarrioService.cs" />
+    <Compile Include="Servicios\Implementaciones\ClienteService.cs" />
+    <Compile Include="Servicios\Implementaciones\FacturaService.cs" />
+    <Compile Include="Servicios\Implementaciones\FormaPagoService.cs" />
+    <Compile Include="Servicios\Implementaciones\LocalidadService.cs" />
+    <Compile Include="Servicios\Implementaciones\ProductoColorService.cs" />
+    <Compile Include="Servicios\Implementaciones\ProductoMaterialService.cs" />
+    <Compile Include="Servicios\Implementaciones\ProductoService.cs" />
+    <Compile Include="Servicios\Implementaciones\ProveedorService.cs" />
+    <Compile Include="Servicios\Implementaciones\SexoService.cs" />
+    <Compile Include="Servicios\Implementaciones\TipoDService.cs" />
+    <Compile Include="Servicios\Implementaciones\TipoFService.cs" />
+    <Compile Include="Servicios\Implementaciones\TipoPService.cs" />
+    <Compile Include="Servicios\Interfaces\IBarrioService.cs" />
+    <Compile Include="Servicios\Interfaces\IClienteService.cs" />
+    <Compile Include="Servicios\Interfaces\IFacturaService.cs" />
+    <Compile Include="Servicios\Interfaces\IFormaPagoService.cs" />
+    <Compile Include="Servicios\Interfaces\ILocalidadService.cs" />
+    <Compile Include="Servicios\Interfaces\IProductoColorService.cs" />
+    <Compile Include="Servicios\Interfaces\IProductoMaterialService.cs" />
+    <Compile Include="Servicios\Interfaces\IProductoService.cs" />
+    <Compile Include="Servicios\Interfaces\IProveedorService.cs" />
+    <Compile Include="Servicios\Interfaces\ISexoService.cs" />
+    <Compile Include="Servicios\Interfaces\ITipoDService.cs" />
+    <Compile Include="Servicios\Interfaces\ITipoFService.cs" />
+    <Compile Include="Servicios\Interfaces\ITipoPService.cs" />
+    <Compile Include="Servicios\UsuarioServicio.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Presentacion\frmABMCBarrios.resx">
+      <DependentUpon>frmABMCBarrios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmABMCClientes.resx">
+      <DependentUpon>frmABMCClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmABMCCompras.resx">
+      <DependentUpon>frmABMCCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmABMCLocalidades.resx">
+      <DependentUpon>frmABMCLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmABMCProductos.resx">
+      <DependentUpon>frmABMCProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmABMCProveedores.resx">
+      <DependentUpon>frmABMCProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmABMCUsuarios.resx">
+      <DependentUpon>frmABMCUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmAltaFactura.resx">
+      <DependentUpon>frmAltaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmABMCTipoProductos.resx">
+      <DependentUpon>frmABMCTipoProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmReporteClienteConMasCompras.resx">
+      <DependentUpon>frmReporteClienteConMasCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmReporteProductos.resx">
+      <DependentUpon>frmReporteProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmReporteProductosVendidos.resx">
+      <DependentUpon>frmReporteProductosVendidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmReporteProveedoresPorBarrio.resx">
+      <DependentUpon>frmReporteProveedoresPorBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\rptClientesConMasCompras.rdlc" />
+    <EmbeddedResource Include="Reportes\rptProductos.rdlc" />
+    <EmbeddedResource Include="Reportes\rptProductosVendidos.rdlc" />
+    <EmbeddedResource Include="Reportes\rptProveedoresPorBarrio.rdlc" />
+    <None Include="BDPav1TPDataSet1.xsc">
+      <DependentUpon>BDPav1TPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BDPav1TPDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDPav1TPDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDPav1TPDataSet1.xss">
+      <DependentUpon>BDPav1TPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\dsClientesConMasCompras.xsc">
+      <DependentUpon>dsClientesConMasCompras.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dsClientesConMasCompras.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsClientesConMasCompras.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\dsClientesConMasCompras.xss">
+      <DependentUpon>dsClientesConMasCompras.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dsProductos.xsc">
+      <DependentUpon>dsProductos.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dsProductos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProductos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\dsProductos.xss">
+      <DependentUpon>dsProductos.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dsProductosVendidos.xsc">
+      <DependentUpon>dsProductosVendidos.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dsProductosVendidos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProductosVendidos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\dsProductosVendidos.xss">
+      <DependentUpon>dsProductosVendidos.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dsProveedoresPorBarrio.xsc">
+      <DependentUpon>dsProveedoresPorBarrio.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dsProveedoresPorBarrio.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProveedoresPorBarrio.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\dsProveedoresPorBarrio.xss">
+      <DependentUpon>dsProveedoresPorBarrio.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\grupo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-de-perfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3126647.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-archivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4237554.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neighborhood-vector-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2590525.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1822410.png" />
+    <None Include="Resources\994649.png" />
+    <None Include="Resources\2956521.png" />
+    <None Include="Resources\3394009.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
