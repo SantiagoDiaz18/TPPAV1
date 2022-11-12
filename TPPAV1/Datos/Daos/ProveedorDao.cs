@@ -70,12 +70,19 @@ namespace TPPav1.Datos.Daos
             {
                 if (vig == 0)
                 {
-                    consultaSQL += " and p.vigencia=" + vig;
+                    consultaSQL += " and p.vigencia=" + vig + " and p.fechaAlta > '" + desde +
+                        "' and p.fechaBaja < '" + hasta + "'";
                 }
                 else
                 {
-                    consultaSQL += " and p.vigencia=" + vig;
+                    consultaSQL += " and p.vigencia=" + vig + " and p.fechaAlta between '" + desde +
+                        "' and '" + hasta + "'";
                 }
+            }
+            else
+            {
+                consultaSQL += " and p.fechaAlta between '" + desde +
+                        "' and '" + hasta + "'";
             }
 
             consultaSQL += " group by b.nombreBarrio, l.nombreLocalidad";

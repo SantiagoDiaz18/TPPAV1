@@ -74,10 +74,6 @@ namespace TPPav1.Presentacion
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            //string consultaSQL = "select l.nombreLocalidad as Localidad, b.nombreBarrio as Barrio, count(*) as Cantidad from Localidades l inner join Barrios b on (l.idLocalidad = b.idLocalidad) inner join Proveedores p on (p.idBarrio = b.idBarrio) group by b.nombreBarrio, l.nombreLocalidad";
-            //rpvProveedores.LocalReport.DataSources.Clear();
-            //rpvProveedores.LocalReport.DataSources.Add(new ReportDataSource("DatosProveedoresPorBarrio", BDHelper.ObtenerInstancia().Consultar(consultaSQL)));
-            //rpvProveedores.RefreshReport();
             if (dtpDesde.Value > dtpHasta.Value)
             {
                 MessageBox.Show("Fechas errones");
@@ -89,10 +85,6 @@ namespace TPPav1.Presentacion
             _localidad = _barrio = string.Empty;
             int _cantidad, _vigencia;
             _cantidad = _vigencia = -1;
-
-
-            //DataTable tabla = oProveedor.TraerFiltrados();
-            //this.dsProveedoresBindingSource.DataSource = oProveedor.TraerFiltrados();
 
             if (cboLocalidad.SelectedIndex != -1)
                 _localidad = cboLocalidad.SelectedValue.ToString();
