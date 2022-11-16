@@ -162,13 +162,13 @@ namespace TPPav1.Datos.Daos
 
         public DataTable RecuperarVendidos(string desde, string hasta, string cantidad, string total)
         {
-            string consultaSQL = "SELECT DF.idProducto, TP.nombre, count(P.idProducto) 'CantidadVendida', sum(df.cantidad * df.precioUnitario) 'TotalFacturado' " +
+            string consultaSQL = "SELECT DF.idProducto, TP.nombre, sum(df.cantidad) 'CantidadVendida', sum(df.cantidad * df.precioUnitario) 'TotalFacturado' " +
                 "FROM Productos P join DetalleFactura DF on P.idProducto = DF.idProducto " +
                 "                 join Facturas F on F.nroFactura = Df.nroFactura and F.tipoFactura = DF.tipoFactura " +
                 "                 join TipoProductos TP on P.idTipo = TP.idTipo " +
                 "WHERE F.fechaEmision Between cast('" + desde + "' as date) and cast('" + hasta + "' as date) " +
                 "GROUP BY DF.idProducto, TP.nombre " +
-                "HAVING count(P.idProducto) >= cast(" + cantidad + " as int) and sum(df.cantidad * df.precioUnitario) >= cast(" + total + " as int) " +
+                "HAVING sum(df.cantidad) >= cast(" + cantidad + " as int) and sum(df.cantidad * df.precioUnitario) >= cast(" + total + " as int) " +
                 "ORDER BY 4 desc";
 
             return BDHelper.ObtenerInstancia().Consultar(consultaSQL);

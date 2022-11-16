@@ -46,7 +46,7 @@
             this.rpvClientesMasCompras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rpvClientesMasCompras.Name = "rpvClientesMasCompras";
             this.rpvClientesMasCompras.ServerReport.BearerToken = null;
-            this.rpvClientesMasCompras.Size = new System.Drawing.Size(1137, 579);
+            this.rpvClientesMasCompras.Size = new System.Drawing.Size(1137, 587);
             this.rpvClientesMasCompras.TabIndex = 0;
             // 
             // label1
@@ -130,7 +130,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1188, 785);
+            this.ClientSize = new System.Drawing.Size(1150, 790);
             this.Controls.Add(this.cbTodosProductos);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboProductos);

@@ -359,15 +359,30 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!nombre.Value</GroupExpression>
+                      <GroupExpression>=Fields!idProducto.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!nombre.Value</Value>
+                      <Value>=Fields!idProducto.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!nombre.Value</Label>
+                  <ChartMembers>
+                    <ChartMember>
+                      <Group Name="Chart1_CategoryGroup1">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!nombre.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!nombre.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <Label>=Fields!nombre.Value</Label>
+                    </ChartMember>
+                  </ChartMembers>
+                  <Label>=Fields!idProducto.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>

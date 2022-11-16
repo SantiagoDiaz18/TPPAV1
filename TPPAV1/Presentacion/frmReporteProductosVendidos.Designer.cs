@@ -45,48 +45,48 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(474, 46);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(632, 57);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.Size = new System.Drawing.Size(84, 16);
             this.label4.TabIndex = 24;
             this.label4.Text = "Total Minimo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(152, 46);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(203, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.Size = new System.Drawing.Size(107, 16);
             this.label3.TabIndex = 23;
             this.label3.Text = "Cantidad Minima";
             // 
             // nudTotal
             // 
-            this.nudTotal.Location = new System.Drawing.Point(546, 44);
+            this.nudTotal.Location = new System.Drawing.Point(728, 54);
+            this.nudTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nudTotal.Maximum = new decimal(new int[] {
             -727379969,
             232,
             0,
             0});
             this.nudTotal.Name = "nudTotal";
-            this.nudTotal.Size = new System.Drawing.Size(186, 20);
+            this.nudTotal.Size = new System.Drawing.Size(248, 22);
             this.nudTotal.TabIndex = 22;
             // 
             // nudCantidad
             // 
-            this.nudCantidad.Location = new System.Drawing.Point(242, 44);
+            this.nudCantidad.Location = new System.Drawing.Point(323, 54);
+            this.nudCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(174, 20);
+            this.nudCantidad.Size = new System.Drawing.Size(232, 22);
             this.nudCantidad.TabIndex = 21;
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(665, 69);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsultar.Location = new System.Drawing.Point(887, 85);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(67, 31);
+            this.btnConsultar.Size = new System.Drawing.Size(89, 38);
             this.btnConsultar.TabIndex = 20;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
@@ -94,54 +94,54 @@
             // 
             // dtpHasta
             // 
-            this.dtpHasta.Location = new System.Drawing.Point(546, 17);
-            this.dtpHasta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpHasta.Location = new System.Drawing.Point(728, 21);
+            this.dtpHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpHasta.Name = "dtpHasta";
-            this.dtpHasta.Size = new System.Drawing.Size(186, 20);
+            this.dtpHasta.Size = new System.Drawing.Size(247, 22);
             this.dtpHasta.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(476, 19);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(635, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.Size = new System.Drawing.Size(87, 16);
             this.label2.TabIndex = 18;
             this.label2.Text = "Fecha Hasta:";
             // 
             // dtpDesde
             // 
-            this.dtpDesde.Location = new System.Drawing.Point(231, 17);
-            this.dtpDesde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpDesde.Location = new System.Drawing.Point(308, 21);
+            this.dtpDesde.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDesde.Name = "dtpDesde";
-            this.dtpDesde.Size = new System.Drawing.Size(185, 20);
+            this.dtpDesde.Size = new System.Drawing.Size(245, 22);
             this.dtpDesde.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(156, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(208, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(92, 16);
             this.label1.TabIndex = 16;
             this.label1.Text = "Fecha Desde:";
             // 
             // rpvProductosVendidos
             // 
+            this.rpvProductosVendidos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.rpvProductosVendidos.LocalReport.ReportEmbeddedResource = "TPPav1.Reportes.rptProductosVendidos.rdlc";
-            this.rpvProductosVendidos.Location = new System.Drawing.Point(19, 112);
+            this.rpvProductosVendidos.Location = new System.Drawing.Point(25, 138);
+            this.rpvProductosVendidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rpvProductosVendidos.Name = "rpvProductosVendidos";
             this.rpvProductosVendidos.ServerReport.BearerToken = null;
-            this.rpvProductosVendidos.Size = new System.Drawing.Size(870, 297);
+            this.rpvProductosVendidos.Size = new System.Drawing.Size(1159, 591);
             this.rpvProductosVendidos.TabIndex = 15;
             // 
             // frmReporteProductosVendidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 418);
+            this.ClientSize = new System.Drawing.Size(1221, 742);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.nudTotal);
@@ -152,7 +152,7 @@
             this.Controls.Add(this.dtpDesde);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rpvProductosVendidos);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmReporteProductosVendidos";
             this.Text = "frmReporteProductosVendidos";
             ((System.ComponentModel.ISupportInitialize)(this.nudTotal)).EndInit();
